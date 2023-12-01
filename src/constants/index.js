@@ -29,6 +29,7 @@ import {
     angularjs,
     wipro,
     bashapp,
+    curconv,
   } from "../assets";
   
   export const navLinks = [
@@ -248,25 +249,25 @@ import {
       source_code_link: "https://github.com/kryptos-code/Remove-It/",
     },
     {
-      name: "Trip Guide",
+      name: "Exchange Expert",
       description:
-        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+        "An application that allows you to convert any currency into your picked up base currency.",
       tags: [
         {
-          name: "nextjs",
+          name: "Java",
           color: "blue-text-gradient",
         },
         {
-          name: "supabase",
+          name: "External API",
           color: "green-text-gradient",
         },
         {
-          name: "css",
+          name: "cmd",
           color: "pink-text-gradient",
         },
       ],
-      image: tripguide,
-      source_code_link: "https://github.com/",
+      image: curconv,
+      source_code_link: "https://github.com/kryptos-code/Currency-Converter/tree/main/ExchangeExpert/",
     },
   ];
   

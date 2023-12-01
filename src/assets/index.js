@@ -36,6 +36,7 @@ import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 import todoapp from "./todoapp.png";
 import bashapp from "./bashapp.png";
+import curconv from "./curconv.png";
 
 export {
   logo,
@@ -73,4 +74,5 @@ export {
   todoapp,
   bashapp,
   mylogo,
+  curconv,
 };
