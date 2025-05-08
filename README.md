@@ -98,3 +98,6 @@ This template is free to use for both personal and commercial projects.
 ## Credits
 
 Created with ❤️ by Shoaib Rehman
+
+
+https://claude.ai/public/artifacts/8d226d57-7b16-4272-b48e-8b46345812f2
