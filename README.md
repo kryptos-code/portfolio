@@ -21,7 +21,9 @@ portfolio/
 ├── css/
 │   └── styles.css
 ├── js/
-│   └── main.js
+│   ├── main.js
+│   ├── config.js
+│   └── portfolio-data.js
 ├── assets/
 │   ├── images/
 │   │   ├── project1.jpg
