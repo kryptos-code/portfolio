@@ -74,6 +74,9 @@ function loadSiteData() {
     const logoImage = document.getElementById('logo-image');
     logoImage.src = portfolioData.site.logoPath;
     logoImage.alt = portfolioData.site.title + " Logo";
+
+    const resumeBtn = document.getElementById('resume-btn');
+    resumeBtn.href = portfolioData.site.resumePath; 
 }
 
 // Load Personal Data

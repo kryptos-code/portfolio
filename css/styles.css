@@ -8,6 +8,7 @@
     --medium-gray: #505050;
     --light-gray: #9ca3af;
     --light: #f3f4f6;
+    --secondary: #00b894;
 }
 
 * {
@@ -165,6 +166,26 @@ header {
     box-shadow: 0 4px 15px rgba(127, 90, 240, 0.4);
     transform: translateY(-2px);
 }
+
+.btn-secondary {
+    background-color: var(--secondary);
+    color: white;
+    letter-spacing: 0.02em;
+    font-family: 'Inter', sans-serif;
+    border: none;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.4s ease;
+    font-weight: 500;
+}
+
+.btn-secondary:hover {
+    background-color: var(--secondary);
+    color: white;
+    box-shadow: 0 4px 15px rgba(100, 100, 255, 0.3);
+    transform: translateY(-2px);
+}
+
 
 /* About Section */
 .about {

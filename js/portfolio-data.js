@@ -4,6 +4,7 @@ const portfolioData = {
     site: {
         title: "Shoaib",
         logoPath: "assets/images/logo.png",
+        resumePath: "assets/resume/resume.pdf",
         favicon: {
             ico: "assets/favicon/favicon.ico",
             apple: "assets/favicon/apple-touch-icon.png",
@@ -27,30 +28,30 @@ const portfolioData = {
     // Projects
     projects: [
         {
-            title: "E-commerce Website",
-            description: "A full-featured e-commerce platform built with React and Node.js, featuring product catalog, shopping cart, and secure payment integration.",
-            image: "assets/images/project1.jpg",
-            tags: ["React", "Node.js", "MongoDB", "Stripe API"],
+            title: "Recruitify - Smart Job Board Platform",
+            description: "A full-stack job portal with role-based access for applicants, employers, and admins. Features include job posting, resume management, analytics dashboard, and email notifications.",
+            image: "assets/images/project1.png",
+            tags: ["Java", "Spring Boot", "Spring Security", "React.js", "Swagger (OpenAPI)"],
             links: {
                 demo: "#",
                 github: "#"
             }
         },
         {
-            title: "Task Management App",
-            description: "A productivity application with drag-and-drop interface, task prioritization, and team collaboration features.",
-            image: "assets/images/project2.jpg",
-            tags: ["Vue.js", "Firebase", "Tailwind CSS"],
+            title: "ResumeSense - Resume Scanner & AI Job Matcher",
+            description: "An AI-powered tool that analyzes resumes against job descriptions to calculate match scores. Built using NLP techniques to highlight relevant skills and optimize job fit.",
+            image: "assets/images/project2.png",
+            tags: ["Python", "React.js", "FastAPI", "sklearn", "Pandas", "TF-IDF", "Named Entity Recognition"],
             links: {
                 demo: "#",
                 github: "#"
             }
         },
         {
-            title: "Portfolio Website",
-            description: "A responsive personal portfolio website showcasing projects, skills, and contact information with a modern design.",
-            image: "assets/images/project3.jpg",
-            tags: ["HTML5", "CSS3", "JavaScript", "GSAP"],
+            title: "FinSight - Personal Finance Tracker with Visual Insights",
+            description: "A modern web app to track income and expenses with interactive charts and export options. Helps users visualize spending patterns and manage personal budgets effectively.",
+            image: "assets/images/project3.png",
+            tags: ["Java", "Spring Boot", "JPA", "React.js", "Axios", "Docker"],
             links: {
                 demo: "#",
                 github: "#"
@@ -75,9 +76,9 @@ const portfolioData = {
     
     // Social Links
     socialLinks: [
-        { platform: "GitHub", icon: "fab fa-github", url: "#" },
-        { platform: "LinkedIn", icon: "fab fa-linkedin", url: "#" },
-        { platform: "Twitter", icon: "fab fa-twitter", url: "#" },
-        { platform: "Instagram", icon: "fab fa-instagram", url: "#" }
+        { platform: "GitHub", icon: "fab fa-github", url: "https://github.com/kryptos-code" },
+        { platform: "LinkedIn", icon: "fab fa-linkedin", url: "https://www.linkedin.com/in/kryptosshoaib" },
+        { platform: "Twitter", icon: "fab fa-twitter", url: "https://x.com/shoaib_io" },
+        { platform: "Instagram", icon: "fab fa-instagram", url: "https://www.instagram.com/shoaib.io" }
     ]
 };
