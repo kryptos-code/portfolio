@@ -66,13 +66,6 @@ header {
     letter-spacing: -0.03em;
 }
 
-.logo-img {
-    height: 1.6rem;
-    width: auto;
-    margin-bottom: -3px;
-    margin-right: 10px;
-}
-
 .nav-toggle {
     display: none;
     background: none;
