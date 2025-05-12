@@ -60,6 +60,7 @@ const portfolioData = {
     
     // Skills
     skills: [
+        { name: "Java", icon: "fab fa-java" },
         { name: "HTML5", icon: "fab fa-html5" },
         { name: "CSS3", icon: "fab fa-css3-alt" },
         { name: "JavaScript", icon: "fab fa-js" },
@@ -67,7 +68,9 @@ const portfolioData = {
         { name: "Node.js", icon: "fab fa-node-js" },
         { name: "MongoDB", icon: "fas fa-database" },
         { name: "Git", icon: "fab fa-git-alt" },
-        { name: "Sass", icon: "fab fa-sass" }
+        { name: "Sass", icon: "fab fa-sass" },
+        { name: "AWS Cloud", icon: "fab fa-aws" },
+        { name: "Docker", icon: "fab fa-docker" }
     ],
     
     // Social Links
