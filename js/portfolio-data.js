@@ -16,7 +16,7 @@ const portfolioData = {
     // Personal Information
     personal: {
         name: "Shoaib Rehman",
-        title: "Software Engineer | Backend Developer | Problem Solver",
+        title: "Software Engineer | Full-Stack Developer | Problem Solver",
         year: 2025,
         about: [
             "Welcome to my portfolio! I’m a dedicated software engineer with a passion for building robust and scalable web applications. With experience across both front-end and back-end development, I enjoy crafting solutions that are not only functional but also user-centric and efficient.",
