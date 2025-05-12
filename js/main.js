@@ -34,29 +34,6 @@ document.querySelectorAll('.project-card, .skill-item').forEach((el) => {
     observer.observe(el);
 });
 
-// Form submission handling
-const contactForm = document.querySelector('.contact-form');
-if (contactForm) {
-    contactForm.addEventListener('submit', function(e) {
-        e.preventDefault();
-        
-        // Get form values
-        const name = document.getElementById('name').value;
-        const email = document.getElementById('email').value;
-        const message = document.getElementById('message').value;
-        
-        // Here you would typically send data to a server
-        // For this example, we'll just log it
-        console.log('Form submitted:', { name, email, message });
-        
-        // Show success message (in a real app, this would happen after successful submission)
-        alert('Thank you for your message! I will get back to you soon.');
-        
-        // Reset form
-        contactForm.reset();
-    });
-}
-
 document.addEventListener('DOMContentLoaded', function() {
     // Initialize mobile navigation
     initializeNavigation();
@@ -178,10 +155,39 @@ function loadSocialLinksData() {
     });
 }
 
+(function () {
+    emailjs.init(EMAILJS_PUBLIC_KEY);
+  })();
+
 // Form submission handling
 document.querySelector('.contact-form').addEventListener('submit', function(e) {
     e.preventDefault();
-    // Add form submission logic here
-    alert('Thank you for your message! I will get back to you soon.');
-    this.reset();
+
+    const recaptchaResponse = grecaptcha.getResponse();
+    if (!recaptchaResponse) {
+        alert("Please complete the reCAPTCHA.");
+        return;
+    }
+
+    emailjs.sendForm(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, this)
+        .then(() => {
+            alert('Thank you for your message! I will get back to you soon.');
+            this.reset();
+            grecaptcha.reset();
+        })
+        .catch((error) => {
+            console.error("Error:", error);
+            alert("Failed to send message.");
+        });
 });
+
+// Inject the sitekey into the reCAPTCHA div
+document.addEventListener("DOMContentLoaded", function () {
+    const recaptchaDiv = document.getElementById("recaptcha-container");
+  
+    if (recaptchaDiv && typeof RECAPTCHA_SITE_KEY !== "undefined") {
+      recaptchaDiv.setAttribute("data-sitekey", RECAPTCHA_SITE_KEY);
+    } else {
+      console.error("reCAPTCHA sitekey not found in config.js.");
+    }
+  });
