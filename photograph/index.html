@@ -122,17 +122,6 @@
                 box-shadow: 0 20px 40px rgba(0, 255, 255, 0.3);
             }
 
-            /* Force iframe to fill container */
-            .insta-post iframe {
-                width: 100%;
-                height: 100%;
-                border: none;
-                transform: scale(1.15);
-                /* Zoom to fit design */
-                transform-origin: top;
-            }
-
-
             iframe {
                 width: 100%;
                 border: 0;
@@ -167,14 +156,20 @@
                 box-shadow: 0 20px 40px rgba(0, 255, 255, 0.3);
             }
 
+
+            .insta-post iframe,
             .reel-frame iframe {
                 width: 100%;
                 height: 100%;
                 border: none;
-                transform: scale(1.1);
-                /* Improve fitting */
-                transform-origin: top;
-            }
+
+                /* Zoom to fill container */
+                transform: scale(1.0);
+                transform-origin: top center;
+
+                /* Prevent scrollbars / overflow */
+                overflow: hidden;
+}
 
 
             footer {
